@@ -216,8 +216,8 @@ class ExpenseController extends Controller
             "company" => $request->company ? $request->company : null,
             "vatno" => $request->vatno ? $request->vatno : null,
             "inv_no" => $request->inv_no ? $request->inv_no : null,
-            "bank_id" => $request->bank_id ? $request->bank_id : null,
-            "file_path" => $request->file('file_path')?$filePath:null,
+            // "bank_id" => $request->bank_id ? $request->bank_id : null,
+            // "file_path" => $request->file('file_path')?$filePath:null,
 
         ]);
         $res=ColumnData::where('expense_id',$request->id)->delete();
