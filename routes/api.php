@@ -151,5 +151,6 @@ Route::post('sale-report',[QuotationController::class, 'saleReport']);
 Route::get('purchase-quote',[PurchaseInvoiceController::class, 'PurchaseInvoice'])->name('purchase.get');
 Route::post('expenseUpdate',[ExpenseController::class, 'expenseUpdate']);
 Route::get('singleExpenses/{id}', [ExpenseController::class, 'singleExpense']);
+Route::get('singleExpensesdffffff/{id}', [ExpenseController::class, 'singleExpense']);
 
 
